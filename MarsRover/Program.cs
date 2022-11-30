@@ -36,7 +36,7 @@ while (true)
                 Directions direction = (Directions)Enum.Parse(typeof(Directions), roverStartingStats[2]);
 
                 Console.WriteLine("Please enter comands.Only L, M, R routing commands must be used. Example (LMLMLMLMM):");
-                string roverCommands = Console.ReadLine();
+                string roverCommands = Console.ReadLine().ToUpper();
 
                 Command rover = new Command(startingX, startingY, direction, XY[0], XY[1]);
 
